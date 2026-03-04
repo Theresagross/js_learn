@@ -1,6 +1,6 @@
 <html>
 <body> 
-    <h1>Nullist_coalscing</h1>
+    <h1>Nullist_coalscing, opsional chaining</h1>
     <body>
         <!-- null dan undefined! -->
         <br>
@@ -24,5 +24,26 @@
 
         // alert(data);
         document.writeln(`<p>${data}</p>`);
+
+        // mengakses property nullish
+        // let person = {}
+        let person = {
+            address: {
+                country: "Indonesia"
+            }
+        }
+
+        let country = person?.address?.country;
+
+        // manual checking 
+        
+        // let country;
+        // if(person.address !== undefined && person.address !== null) {
+        //     country = person.address.country;
+        // }
+
+        document.writeln(`${country}`);
+
+        document.writeln(`sukses`);
     </script>
 </html>
